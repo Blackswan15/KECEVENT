@@ -1,0 +1,145 @@
+body{
+    font-family: bn;
+}
+.header {
+    background-image: url('kecbuild.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 5px; 
+    color: white;
+    margin: 2px;
+    text-align: center; 
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 203, 186, 0.7);
+    z-index: 1;
+}
+
+.header h1 {
+    position: relative;
+    z-index: 2; /* put text above the overlay */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.header p {
+    margin: 10px 0;
+}
+
+.navigation {
+    background-color: azure;
+    padding: 2px;
+    text-align: center;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    position: relative;
+}
+
+.navigation ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 25px 15px;
+    font-family: bn;
+    display: block; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.navigation ul a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 30%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.box h3 {
+    color: #343a40;
+    text-align: center;
+    margin-top: auto; 
+}
+
+.footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.navigation .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navigation .dropdown-content a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.navigation .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #e9ecef;
+    margin: 0 5px;
+}
+
+@font-face {
+    font-family: 'bn';
+    src: url("/BENGUIAB.TTF") format("truetype");
+}

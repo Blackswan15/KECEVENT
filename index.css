@@ -1,0 +1,211 @@
+* {
+    font-family: bn;
+}
+
+.header {
+    background-image: url('kecbuild.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 5px;
+    color: white;
+    margin: 2px;
+    text-align: center;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 203, 186, 0.7);
+    z-index: 1;
+}
+
+.header h1 {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header p {
+    margin: 10px 0;
+}
+
+.navigation {
+    background-color: azure;
+    padding: 2px;
+    text-align: center;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    position: relative;
+}
+
+.navigation ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation ul a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.sidebar {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 25px;
+    height: 100%;
+}
+
+.sidebar ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar ul a:hover {
+    color: #007bff;
+}
+
+.liveevent {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+}
+
+.livecard {
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.livecard:hover {
+    transform: translateY(-5px);
+}
+
+.livecard h3 {
+    color: #343a40;
+    margin-bottom: 5px;
+}
+
+.livecard .event-date {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0069d9;
+    transform: scale(1.05);
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.event-schedule {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #e9ecef;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.navigation .dropdown {
+    position: relative;
+}
+
+.navigation .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: azure;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+.navigation .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navigation .dropdown-content a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.navigation .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@font-face {
+    font-family: 'bn';
+    src: url("/BENGUIAB.TTF") format("truetype");
+}
+.nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: grey;
+    color: white;
+}
+
+.list-group-item {
+    background-color: transparent;
+}
+
+.dropdown-item:hover {
+    background-color: grey;
+    color: white;
+}
+.table {
+    width: 100%;
+}
